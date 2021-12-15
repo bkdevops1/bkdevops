@@ -20,9 +20,6 @@ pipeline {
       * Jenkins pipline related variables
       */
       
-
-
-      
       stages{
 
             stage('Initialize'){
@@ -35,8 +32,8 @@ pipeline {
                               /**
                               * DevOps Config App related information
                               */
-                              appName='devops-demo-web-app'
-                              deployableName = 'PROD-US'
+                              appName='ServiceNowDevopsConfigTest'
+                              deployableName = 'PROD'
                               componentName="web-app-v1.1"
                               collectionName="release-1.0"
                               
@@ -324,7 +321,7 @@ pipeline {
 
             }
             
-            stage("Deploy to PROD-US"){
+            stage("Deploy to PROD"){
                   steps{
                         script{
                               echo "Reading config from file name ${fullFileName}"
