@@ -327,7 +327,7 @@ pipeline {
                               echo "Reading config from file name ${fullFileName}"
                               echo " ++++++++++++ BEGIN OF File Content ***************"
                               sh "cat ${fullFileName}"
-                              echo " ++++++++++++ END OF File content ***************"
+                              echo " ++++++++++++ END OF File content **************"
                               
                               echo "deploy finished successfully."
 
